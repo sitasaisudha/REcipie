@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "14.X"
+    "node": "18.X"
   },
   "scripts": {
+
     "start": "node index.js",
+    "dev":"node index.js",
+    "build":"npm i",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
