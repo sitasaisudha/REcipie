@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REcipies page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+
+    
+    <div class="recipies-section">
+        <h3>Recipies</h3>
+        <div >
+
+        <%recipies.forEach((recipie)=>{ %>
+            <ul class="recipie-box">
+                <li>Name : <%=recipie.name %></li>
+                <li>Description : <%=recipie.description %></li>
+                <li>Ingredients : <%=recipie.ingredients %> </li>
+                <div class="buttons-div" >
+                    <form action="/<%=recipie.id%>/delete" method="post" style="display: inline;">
+                        <input type="submit" value="delete" class="button" id="delete" >
+                    </form>
+                    <form action="/<%=recipie._id %>/edit" method="get" style="display: inline;" >
+                        <button type="submit" class="button"  id="edit">Edit</button>
+                    </form>
+                </div>
+                
+            </ul>
+       <% }) %>
+        </div>
+    <a href="/new">Add a New Recipe</a>
+    </div>
+</center>
+
+</body>
+</html>

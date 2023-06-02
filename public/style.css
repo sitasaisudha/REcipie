@@ -1,0 +1,55 @@
+
+.recipie-box{
+    display: flex;
+    flex-direction: column;
+
+    height: 250px;
+    font-size: larger;
+    width: 500px;
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.recipie-box li{
+    margin: 15px 45px;
+}
+.button{
+    height: 45px;
+    width: 150px;
+    border-radius: 15px;
+    margin: 15px 40px;
+}
+
+#delete{
+    background-color: red;
+}
+#edit{
+    background-color: green;
+}
+.newform{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: larger;
+   
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   
+}
+
+.text-field{
+    height: 45px;
+    width: 250px;
+    margin-left: 150px;
+
+}
+.text-area{
+    height: 90px;
+    width: 200px;
+    margin-left: 150px;
+}
+
+.newform .button{
+   background-color: green;
+   margin-left: 175px;
+}
