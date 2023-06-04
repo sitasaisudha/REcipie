@@ -7,6 +7,7 @@ app.use(bodyparser.urlencoded({extended:false}))
 app.use(express.static('./public'))
 app.set('view engine' , 'ejs')
 
+
 const Recipie = mongoose.model('recipie',{
     name: String,
     description: String,
